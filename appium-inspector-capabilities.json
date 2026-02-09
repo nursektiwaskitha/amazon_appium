@@ -1,0 +1,13 @@
+{
+  "platformName": "Android",
+  "platformVersion": "14.0",
+  "deviceName": "Android Emulator",
+  "automationName": "UiAutomator2",
+  "appPackage": "com.amazon.mShop.android.shopping",
+  "appActivity": "com.amazon.mShop.home.HomeActivity",
+  "autoGrantPermissions": true,
+  "noReset": true,
+  "fullReset": false,
+  "newCommandTimeout": 300,
+  "androidInstallTimeout": 90000
+}
