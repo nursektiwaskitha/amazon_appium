@@ -1,0 +1,8 @@
+{
+  "platformName": "Android",
+  "platformVersion": "14.0",
+  "automationName": "UiAutomator2",
+  "appPackage": "com.amazon.mShop.android.shopping",
+  "appActivity": "com.amazon.mShop.home.HomeActivity",
+  "noReset": true
+}

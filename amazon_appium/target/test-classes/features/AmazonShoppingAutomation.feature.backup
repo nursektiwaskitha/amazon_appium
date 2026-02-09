@@ -1,0 +1,175 @@
+@AmazonShopping
+Feature: Amazon Shopping App Automation
+  As a user of Amazon Shopping app
+  I want to perform various shopping actions
+  So that I can test all the app functionalities
+
+  Background:
+    Given the Amazon app is launched successfully
+    And I am on the home page
+
+  @Login @Authentication
+  Scenario: Login to Amazon account
+    Given I am on the Amazon home page
+    When I click on the account menu
+    And I click on sign in button
+    And I enter email "testsekti@gmail.com"
+    And I click on continue button
+    And I enter password "TestSekti99!!"
+    And I submit login account
+    Then I should be logged in successfully
+    And I should see my account name
+
+  @Smoke @Search
+  Scenario: Search for a product and verify results
+    Given I am on the Amazon home page
+    When I search for "iPhone 17 Pro Max" in the search bar
+    Then I should see search results displayed
+    And search results should contain products
+
+  @ProductDetails @Click
+  Scenario: Navigate to product details page
+    Given I am on the Amazon home page
+    When I search for "iPhone 17 Pro Max" in the search bar
+    And I click on the first product from search results
+    Then the product details page should be displayed
+    And I should see the product title
+
+  @Gesture @Swipe
+  Scenario: Swipe image
+    Given I am on the Amazon home page
+    When I search for "iPhone 17 Pro Max" in the search bar
+    And I click on the first product from search results
+    Then the product details page should be displayed
+    And I should see the product title
+    When I swipe the product image to the left
+    Then the next product image should be displayed
+
+  @Smoke @Search
+  Scenario: E2E
+    Given I am on the Amazon home page
+    When I search for "iPhone 17 Pro Max" in the search bar
+    Then the home page search hint should not be present
+    And I should see search results displayed
+    When I capture the product image from search results
+    And I apply the "4 star and above" filter
+    Then all products should have rating of 4.0 stars or above
+    When I swipe suggested filter
+    Then some suggested filters should not be visible anymore
+    When I click on the first product from search results
+    Then the product details page should be displayed
+    And I should see the product title
+    When I capture the product image from product details
+    Then the product images should match with 80-100% similarity
+    When I swipe the product image to the left
+    Then the product image index should change from 0 to 1
+    When I zoom in on the product image
+    Then the product image should be enlarged
+    When I zoom out on the product image
+    Then the product image should return to normal size
+    When I scroll until price is visible
+    Then I should see the product price
+
+  @Navigation @Routing
+  Scenario: Navigate between pages - Home to Category to Product
+    Given I am on the Amazon home page
+    When I search for "iPhone 17 Pro Max" in the search bar
+    Then the home page search hint should not be present
+    And I should see search results displayed
+    When I click on the first product
+    Then the product details page should be displayed
+    When I navigate back
+    Then I should see search results displayed
+    When I navigate back
+    Then I should be back to the home page
+
+  @Swipe @Gesture
+  Scenario: Swipe through product images on product details page
+    Given I am on the Amazon home page
+    When I search for "Samsung Galaxy" in the search bar
+    And I click on the first product from search results
+    And the product details page should be displayed
+    When I swipe left on product images
+    Then the next product image should be displayed
+
+  @Scroll @Gesture
+  Scenario: Scroll through search results to find specific product
+    Given I am on the Amazon home page
+    When I search for "Smart Watch" in the search bar
+    Then I should see search results displayed
+    When I scroll down through the search results
+    Then more products should load and be visible
+
+  @Zoom @Gesture
+  Scenario: Zoom in and out on product image
+    Given I am on the Amazon home page
+    When I search for "iPhone" in the search bar
+    And I click on the first product from search results
+    And the product details page should be displayed
+    When I zoom in on the product image
+    Then the product image should be enlarged
+    When I zoom out on the product image
+    Then the product image should return to normal size
+
+  @Filter @Verification
+  Scenario: Apply filters to search results
+    Given I am on the Amazon home page
+    When I search for "Books" in the search bar
+    Then I should see search results displayed
+    When I open the filter options
+    And I apply a filter for category
+    Then the filtered results should be displayed
+
+  @ElementPresence @Verification
+  Scenario: Verify elements are present on home page
+    Given I am on the Amazon home page
+    Then the search bar should be present
+    And the menu button should be present
+    And the cart button should be present
+
+  @ElementNotPresence @Verification
+  Scenario: Verify element is not present after navigation
+    Given I am on the Amazon home page
+    When I search for "Tablet" in the search bar
+    Then the home page search hint should not be present
+    And the search results page should be displayed
+
+  @Drag @Gesture
+  Scenario: Test drag gesture on compatible elements
+    Given I am on the Amazon home page
+    When I search for "Office Chair" in the search bar
+    And I click on the first product from search results
+    And the product details page should be displayed
+    When I scroll down to reviews section
+    Then the reviews section should be visible
+
+  @ImageComparison
+  Scenario: Compare product images for similarity
+    Given I am on the Amazon home page
+    When I search for "Camera" in the search bar
+    And I click on the first product from search results
+    And the product details page should be displayed
+    When I capture the product image as "product_image_1"
+    And I swipe left on product images
+    And I capture the product image as "product_image_2"
+    Then the images should be different
+
+  @FilterHandling @Advanced
+  Scenario: Handle multiple filter selections
+    Given I am on the Amazon home page
+    When I search for "Men Shoes" in the search bar
+    Then I should see search results displayed
+    When I open the filter options
+    And I select brand filter
+    And I apply brand filter
+    Then the filtered results should be displayed
+    And the filter should be active
+
+  @ScrollUntilElement
+  Scenario: Scroll until specific element is found
+    Given I am on the Amazon home page
+    When I click on the menu button
+    And I scroll until "Customer Service" option is visible
+    Then the "Customer Service" option should be present
+    When I click on "Customer Service" option
+    Then the customer service page should be displayed

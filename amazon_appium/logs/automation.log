@@ -1,0 +1,251 @@
+2026-02-09 16:52:47.531 [main] INFO  com.getgo.stepdefinitions.AmazonShoppingSteps - Setting up test execution
+2026-02-09 16:52:47.533 [main] INFO  com.getgo.config.CapabilitiesConfig - Capabilities loaded from: src/test/resources/config/capabilities.properties
+2026-02-09 16:52:47.536 [main] INFO  com.getgo.config.CapabilitiesConfig - Android Capabilities configured: Capabilities {androidInstallTimeout: 90000, appActivity: com.amazon.mShop.home.HomeA..., appPackage: com.amazon.mShop.android.sh..., autoGrantPermissions: true, automationName: UiAutomator2, deviceName: Android Emulator, fullReset: false, newCommandTimeout: 300, noReset: true, platformName: ANDROID, platformVersion: 14.0}
+2026-02-09 16:52:47.536 [main] INFO  com.getgo.drivermanager.DriverManager - Initializing Appium Driver with URL: http://127.0.0.1:4723
+2026-02-09 16:52:47.536 [main] INFO  com.getgo.drivermanager.DriverManager - Capabilities: Capabilities {androidInstallTimeout: 90000, appActivity: com.amazon.mShop.home.HomeA..., appPackage: com.amazon.mShop.android.sh..., autoGrantPermissions: true, automationName: UiAutomator2, deviceName: Android Emulator, fullReset: false, newCommandTimeout: 300, noReset: true, platformName: ANDROID, platformVersion: 14.0}
+2026-02-09 16:52:52.609 [main] INFO  com.getgo.drivermanager.DriverManager - Appium Driver initialized successfully
+2026-02-09 16:52:52.609 [main] INFO  com.getgo.stepdefinitions.AmazonShoppingSteps - Restarting app to ensure clean state
+2026-02-09 16:52:52.646 [main] INFO  com.getgo.stepdefinitions.AmazonShoppingSteps - App is already running, terminating it...
+2026-02-09 16:52:53.119 [main] INFO  com.getgo.stepdefinitions.AmazonShoppingSteps - App terminated successfully
+2026-02-09 16:52:54.124 [main] INFO  com.getgo.stepdefinitions.AmazonShoppingSteps - Launching app...
+2026-02-09 16:52:54.255 [main] INFO  com.getgo.stepdefinitions.AmazonShoppingSteps - App launched successfully
+2026-02-09 16:52:56.711 [main] INFO  com.getgo.pages.BasePage - Amazon Home Page initialized
+2026-02-09 16:52:56.751 [main] INFO  com.getgo.pages.BasePage - Amazon Search Results Page initialized
+2026-02-09 16:52:56.788 [main] INFO  com.getgo.pages.BasePage - Amazon Product Details Page initialized
+2026-02-09 16:52:56.789 [main] INFO  com.getgo.pages.BasePage - Amazon Login Page initialized
+2026-02-09 16:52:59.794 [main] INFO  com.getgo.stepdefinitions.AmazonShoppingSteps - Test setup completed successfully
+2026-02-09 16:52:59.839 [main] INFO  com.getgo.stepdefinitions.AmazonShoppingSteps - Verifying Amazon app is launched
+2026-02-09 16:52:59.845 [main] INFO  com.getgo.stepdefinitions.AmazonShoppingSteps - Verifying home page is displayed
+2026-02-09 16:53:15.050 [main] INFO  com.getgo.utils.ElementUtil - Element is not present: By.xpath: //*[contains(@text, 'Skip') or contains(@text, 'Later') or contains(@text, 'Not now') or contains(@text, 'Maybe later') or contains(@text, 'No thanks')]
+2026-02-09 16:53:15.052 [main] INFO  com.getgo.stepdefinitions.AmazonShoppingSteps - No popups detected - continuing
+2026-02-09 16:53:15.149 [main] INFO  com.getgo.stepdefinitions.AmazonShoppingSteps - Current page activity: com.amazon.mShop.navigation.MainActivity
+2026-02-09 16:53:15.150 [main] INFO  com.getgo.stepdefinitions.AmazonShoppingSteps - On Amazon home page
+2026-02-09 16:53:15.185 [main] INFO  com.getgo.utils.ElementUtil - Element is present: AppiumBy.androidUIAutomator: new UiSelector().resourceId("gwm-Deck")
+2026-02-09 16:53:15.186 [main] INFO  com.getgo.pages.BasePage - Home page displayed: true
+2026-02-09 16:53:15.188 [main] INFO  com.getgo.stepdefinitions.AmazonShoppingSteps - Verifying Amazon home page is displayed
+2026-02-09 16:53:28.301 [main] INFO  com.getgo.utils.ElementUtil - Element is not present: By.xpath: //*[contains(@text, 'Skip') or contains(@text, 'Later') or contains(@text, 'Not now') or contains(@text, 'Maybe later') or contains(@text, 'No thanks')]
+2026-02-09 16:53:28.302 [main] INFO  com.getgo.stepdefinitions.AmazonShoppingSteps - No popups detected - continuing
+2026-02-09 16:53:28.367 [main] INFO  com.getgo.stepdefinitions.AmazonShoppingSteps - Current page activity: com.amazon.mShop.navigation.MainActivity
+2026-02-09 16:53:28.387 [main] INFO  com.getgo.utils.ElementUtil - Element is present: AppiumBy.androidUIAutomator: new UiSelector().resourceId("gwm-Deck")
+2026-02-09 16:53:28.387 [main] INFO  com.getgo.pages.BasePage - Home page displayed: true
+2026-02-09 16:53:28.387 [main] INFO  com.getgo.stepdefinitions.AmazonShoppingSteps - On Amazon home page confirmed
+2026-02-09 16:53:28.392 [main] INFO  com.getgo.stepdefinitions.AmazonShoppingSteps - Searching for product: iPhone 17 Pro Max
+2026-02-09 16:53:28.427 [main] INFO  com.getgo.utils.ElementUtil - Element is present: By.id: com.amazon.mShop.android.shopping:id/chrome_search_hint_view
+2026-02-09 16:53:28.510 [main] INFO  com.getgo.utils.ElementUtil - Element is clickable: By.id: com.amazon.mShop.android.shopping:id/chrome_search_hint_view
+2026-02-09 16:53:30.094 [main] INFO  com.getgo.utils.ElementUtil - Clicked on element: By.id: com.amazon.mShop.android.shopping:id/chrome_search_hint_view
+2026-02-09 16:53:30.096 [main] INFO  com.getgo.pages.BasePage - Clicked on search bar
+2026-02-09 16:53:31.150 [main] INFO  com.getgo.utils.ElementUtil - Element is visible: By.id: com.amazon.mShop.android.shopping:id/rs_search_src_text
+2026-02-09 16:53:32.446 [main] INFO  com.getgo.utils.ElementUtil - Sent keys to element: By.id: com.amazon.mShop.android.shopping:id/rs_search_src_text
+2026-02-09 16:53:32.446 [main] INFO  com.getgo.pages.BasePage - Entered search text: iPhone 17 Pro Max
+2026-02-09 16:53:32.447 [main] INFO  com.getgo.pages.BasePage - Attempting to press Enter using Android KeyEvent
+2026-02-09 16:53:33.139 [main] INFO  com.getgo.pages.BasePage - Successfully pressed Enter using Android KeyEvent
+2026-02-09 16:53:35.141 [main] INFO  com.getgo.pages.BasePage - Executed search
+2026-02-09 16:53:35.145 [main] INFO  com.getgo.stepdefinitions.AmazonShoppingSteps - Verifying home page search hint is not present
+2026-02-09 16:53:45.228 [main] INFO  com.getgo.utils.ElementUtil - Element is not present: AppiumBy.androidUIAutomator: new UiSelector().resourceId("com.amazon.mShop.android.shopping:id/iss_autocomplete_ux_container")
+2026-02-09 16:53:45.234 [main] INFO  com.getgo.utils.ElementUtil - Element is not present: AppiumBy.androidUIAutomator: new UiSelector().resourceId("com.amazon.mShop.android.shopping:id/iss_autocomplete_ux_container") - true
+2026-02-09 16:53:45.234 [main] INFO  com.getgo.pages.BasePage - User not in home page : true
+2026-02-09 16:53:45.238 [main] INFO  com.getgo.stepdefinitions.AmazonShoppingSteps - Verifying search results are displayed
+2026-02-09 16:53:48.295 [main] INFO  com.getgo.utils.ElementUtil - Element is visible: AppiumBy.androidUIAutomator: new UiSelector().resourceId("search")
+2026-02-09 16:53:49.196 [main] INFO  com.getgo.pages.BasePage - Search results page displayed with 64 product view(s)
+2026-02-09 16:53:49.198 [main] INFO  com.getgo.stepdefinitions.AmazonShoppingSteps - Capturing product image from search results
+2026-02-09 16:53:49.228 [main] INFO  com.getgo.utils.ElementUtil - Element is present: AppiumBy.androidUIAutomator: new UiSelector().className("android.view.ViewGroup").childSelector(new UiSelector().description("Amazon's Choice"))
+2026-02-09 16:53:59.299 [main] INFO  com.getgo.pages.BasePage - Capturing entire product card as no ImageView found
+2026-02-09 16:53:59.977 [main] INFO  com.getgo.pages.BasePage - Captured Amazon's Choice product image: target/screenshots/search_result_1770627229198.png
+2026-02-09 16:53:59.977 [main] INFO  com.getgo.stepdefinitions.AmazonShoppingSteps - Captured search result image: target/screenshots/search_result_1770627229198.png
+2026-02-09 16:53:59.978 [main] INFO  com.getgo.stepdefinitions.AmazonShoppingSteps - Applying filter: 4 star and above
+2026-02-09 16:54:00.011 [main] INFO  com.getgo.utils.ElementUtil - Element is present: AppiumBy.androidUIAutomator: new UiSelector().textMatches(".*4.*[Ss]tar.*|.*4.*[Uu]p.*")
+2026-02-09 16:54:01.007 [main] INFO  com.getgo.utils.ElementUtil - Clicked on element
+2026-02-09 16:54:01.007 [main] INFO  com.getgo.pages.BasePage - Applied 4 star filter: Apply 4 Stars & Up filter to narrow results
+2026-02-09 16:54:03.013 [main] INFO  com.getgo.stepdefinitions.AmazonShoppingSteps - 4 star filter applied successfully
+2026-02-09 16:54:03.021 [main] INFO  com.getgo.stepdefinitions.AmazonShoppingSteps - Verifying all products have rating >= 4.0 stars
+2026-02-09 16:54:03.220 [main] INFO  com.getgo.pages.BasePage - Found 1 products with star ratings
+2026-02-09 16:54:03.237 [main] INFO  com.getgo.pages.BasePage - Checking rating: 4.6 out of 5 stars
+2026-02-09 16:54:03.241 [main] INFO  com.getgo.pages.BasePage - ✓ Product rating 4.6 is >= 4.0
+2026-02-09 16:54:03.245 [main] INFO  com.getgo.pages.BasePage - Verification complete - Valid: 1, Invalid: 0
+2026-02-09 16:54:03.246 [main] INFO  com.getgo.stepdefinitions.AmazonShoppingSteps - Successfully verified all products have rating >= 4.0 stars
+2026-02-09 16:54:03.247 [main] INFO  com.getgo.stepdefinitions.AmazonShoppingSteps - Swipe left suggested filter options
+2026-02-09 16:54:03.323 [main] INFO  com.getgo.pages.BasePage - Found visible filter: Remove 4 Stars & Up filter to expand results
+2026-02-09 16:54:03.364 [main] INFO  com.getgo.pages.BasePage - Found visible filter: Apply All Discounts filter to narrow results
+2026-02-09 16:54:03.391 [main] INFO  com.getgo.pages.BasePage - Found visible filter: Apply Today's Deals filter to narrow results
+2026-02-09 16:54:03.392 [main] INFO  com.getgo.pages.BasePage - Total visible filters found: 3
+2026-02-09 16:54:03.393 [main] INFO  com.getgo.stepdefinitions.AmazonShoppingSteps - Captured 3 filters before swipe
+2026-02-09 16:54:03.393 [main] INFO  com.getgo.pages.BasePage - Swipe left on suggested filter 3 times
+2026-02-09 16:54:03.415 [main] INFO  com.getgo.pages.BasePage - Performing swipe left #1
+2026-02-09 16:54:04.315 [main] INFO  com.getgo.utils.GestureUtil - Swiped from (1134,859) to (504,859)
+2026-02-09 16:54:04.316 [main] INFO  com.getgo.utils.GestureUtil - Swiped left on element
+2026-02-09 16:54:05.317 [main] INFO  com.getgo.pages.BasePage - Performing swipe left #2
+2026-02-09 16:54:06.230 [main] INFO  com.getgo.utils.GestureUtil - Swiped from (1075,859) to (268,859)
+2026-02-09 16:54:06.231 [main] INFO  com.getgo.utils.GestureUtil - Swiped left on element
+2026-02-09 16:54:07.235 [main] INFO  com.getgo.pages.BasePage - Performing swipe left #3
+2026-02-09 16:54:08.119 [main] INFO  com.getgo.utils.GestureUtil - Swiped from (1075,859) to (268,859)
+2026-02-09 16:54:08.120 [main] INFO  com.getgo.utils.GestureUtil - Swiped left on element
+2026-02-09 16:54:09.125 [main] INFO  com.getgo.pages.BasePage - Completed 3 swipes on suggested filter
+2026-02-09 16:54:09.126 [main] INFO  com.getgo.stepdefinitions.AmazonShoppingSteps - Swipe completed
+2026-02-09 16:54:09.128 [main] INFO  com.getgo.stepdefinitions.AmazonShoppingSteps - Verifying that filters changed after swipe
+2026-02-09 16:54:20.196 [main] INFO  com.getgo.pages.BasePage - Total visible filters found: 0
+2026-02-09 16:54:20.199 [main] INFO  com.getgo.pages.BasePage - Filters before swipe: [Remove 4 Stars & Up filter to expand results, Apply All Discounts filter to narrow results, Apply Today's Deals filter to narrow results]
+2026-02-09 16:54:20.200 [main] INFO  com.getgo.pages.BasePage - Filters after swipe: []
+2026-02-09 16:54:20.201 [main] INFO  com.getgo.pages.BasePage - Filter 'Remove 4 Stars & Up filter to expand results' is no longer visible after swipe
+2026-02-09 16:54:20.201 [main] INFO  com.getgo.stepdefinitions.AmazonShoppingSteps - Successfully verified that filters changed after swipe
+2026-02-09 16:54:20.214 [main] INFO  com.getgo.stepdefinitions.AmazonShoppingSteps - Clicking first product
+2026-02-09 16:54:20.261 [main] INFO  com.getgo.utils.ElementUtil - Element is visible: AppiumBy.androidUIAutomator: new UiSelector().resourceId("search")
+2026-02-09 16:54:20.345 [main] INFO  com.getgo.pages.BasePage - Found 60 View elements in search results
+2026-02-09 16:54:20.783 [main] INFO  com.getgo.pages.BasePage - Found product card: Amazon's Choice
+2026-02-09 16:54:20.807 [main] INFO  com.getgo.pages.BasePage - Found product card: SUPFINE
+2026-02-09 16:54:20.833 [main] INFO  com.getgo.pages.BasePage - Found product card: Magnetic for iPhone 17 Pro Max Case (Compatible wi
+2026-02-09 16:54:20.856 [main] INFO  com.getgo.pages.BasePage - Found product card: Magnetic for iPhone 17 Pro Max Case (Compatible wi
+2026-02-09 16:54:20.908 [main] INFO  com.getgo.pages.BasePage - Found product card: Options: 23 sizes
+2026-02-09 16:54:20.957 [main] INFO  com.getgo.pages.BasePage - Found product card: 4.6 out of 5 stars 52,736 ratings 10K+ bought in p
+2026-02-09 16:54:21.022 [main] INFO  com.getgo.pages.BasePage - Found product card: $9.99
+2026-02-09 16:54:21.110 [main] INFO  com.getgo.pages.BasePage - Found product card: Delivery Sat, Feb 21 Ships to Indonesia
+2026-02-09 16:54:21.495 [main] INFO  com.getgo.pages.BasePage - Found product card: Best Seller
+2026-02-09 16:54:21.640 [main] INFO  com.getgo.pages.BasePage - Found product card: click?ie=UTF8&spc=MToxMzQ5MjI1NjQ0ODEzMDI0OjE3NzA2
+2026-02-09 16:54:21.837 [main] INFO  com.getgo.pages.BasePage - Found 10 clickable product cards
+2026-02-09 16:54:21.894 [main] INFO  com.getgo.utils.ElementUtil - Clicked on element
+2026-02-09 16:54:21.895 [main] INFO  com.getgo.pages.BasePage - Clicked first product card: Amazon's Choice
+2026-02-09 16:54:23.901 [main] INFO  com.getgo.stepdefinitions.AmazonShoppingSteps - Verifying product details page is displayed
+2026-02-09 16:54:27.012 [main] INFO  com.getgo.utils.ElementUtil - Element is present: AppiumBy.androidUIAutomator: new UiSelector().resourceId("title_feature_div")
+2026-02-09 16:54:27.020 [main] INFO  com.getgo.pages.BasePage - Product details page displayed: true
+2026-02-09 16:54:27.031 [main] INFO  com.getgo.stepdefinitions.AmazonShoppingSteps - Verifying product title is visible
+2026-02-09 16:54:27.573 [main] INFO  com.getgo.utils.ElementUtil - Element is present: AppiumBy.androidUIAutomator: new UiSelector().resourceId("title_feature_div")
+2026-02-09 16:54:27.586 [main] INFO  com.getgo.stepdefinitions.AmazonShoppingSteps - Capturing product image from product details page
+2026-02-09 16:54:28.202 [main] INFO  com.getgo.pages.BasePage - Captured product image: target/screenshots/product_detail_1770627267586.png
+2026-02-09 16:54:28.202 [main] INFO  com.getgo.stepdefinitions.AmazonShoppingSteps - Captured product detail image: target/screenshots/product_detail_1770627267586.png
+2026-02-09 16:54:28.203 [main] INFO  com.getgo.stepdefinitions.AmazonShoppingSteps - Comparing product images with 80-100% threshold
+2026-02-09 16:54:28.816 [main] INFO  com.getgo.utils.ImageComparisonUtil - OpenCV loaded successfully
+2026-02-09 16:54:28.861 [main] INFO  com.getgo.utils.ImageComparisonUtil - Image comparison result: 5,50% similarity
+2026-02-09 16:54:28.888 [main] INFO  com.getgo.utils.ImageComparisonUtil - Histogram comparison result: 94,45% similarity
+2026-02-09 16:54:28.888 [main] INFO  com.getgo.utils.ImageComparisonUtil - Robust comparison - Pixel: 5,50%, Histogram: 94,45%, Final: 94,45%
+2026-02-09 16:54:28.888 [main] INFO  com.getgo.stepdefinitions.AmazonShoppingSteps - Image similarity: 94,45% (threshold: 80-100%)
+2026-02-09 16:54:28.888 [main] INFO  com.getgo.stepdefinitions.AmazonShoppingSteps - Successfully verified product images match
+2026-02-09 16:54:28.909 [main] INFO  com.getgo.utils.ImageComparisonUtil - Image comparison result: 5,50% similarity
+2026-02-09 16:54:28.932 [main] INFO  com.getgo.utils.ImageComparisonUtil - Histogram comparison result: 94,45% similarity
+2026-02-09 16:54:28.967 [main] INFO  com.getgo.utils.ImageComparisonUtil - Comparison report saved to: target/screenshots/diff_1770627268888.png
+2026-02-09 16:54:28.968 [main] INFO  com.getgo.stepdefinitions.AmazonShoppingSteps - Detailed comparison - Pixel-based: 5,50%, Histogram-based: 94,45%
+2026-02-09 16:54:28.968 [main] INFO  com.getgo.stepdefinitions.AmazonShoppingSteps - Saved comparison report: target/screenshots/diff_1770627268888.png
+2026-02-09 16:54:28.968 [main] INFO  com.getgo.stepdefinitions.AmazonShoppingSteps - Swiping product image to the left
+2026-02-09 16:54:29.041 [main] INFO  com.getgo.utils.ElementUtil - Element is visible: AppiumBy.androidUIAutomator: new UiSelector().resourceIdMatches(".*image-block-product-image.*")
+2026-02-09 16:54:29.117 [main] INFO  com.getgo.pages.BasePage - resourceIdimage-block-product-image-0
+2026-02-09 16:54:29.119 [main] INFO  com.getgo.pages.BasePage - Current product image index: 0 (resource-id: image-block-product-image-0)
+2026-02-09 16:54:29.119 [main] INFO  com.getgo.stepdefinitions.AmazonShoppingSteps - Image index before swipe: 0
+2026-02-09 16:54:30.023 [main] INFO  com.getgo.utils.GestureUtil - Swiped from (1050,2051) to (294,2051)
+2026-02-09 16:54:30.024 [main] INFO  com.getgo.utils.GestureUtil - Swiped left on element
+2026-02-09 16:54:30.024 [main] INFO  com.getgo.pages.BasePage - Swiped product image to the left
+2026-02-09 16:54:30.750 [main] INFO  com.getgo.utils.ElementUtil - Element is visible: AppiumBy.androidUIAutomator: new UiSelector().resourceIdMatches(".*image-block-product-image.*")
+2026-02-09 16:54:30.815 [main] INFO  com.getgo.pages.BasePage - resourceIdimage-block-product-image-0
+2026-02-09 16:54:30.815 [main] INFO  com.getgo.pages.BasePage - Current product image index: 0 (resource-id: image-block-product-image-0)
+2026-02-09 16:54:30.816 [main] INFO  com.getgo.stepdefinitions.AmazonShoppingSteps - Waiting for index change... Current: 0, Expected to be different from: 0
+2026-02-09 16:54:31.404 [main] INFO  com.getgo.utils.ElementUtil - Element is visible: AppiumBy.androidUIAutomator: new UiSelector().resourceIdMatches(".*image-block-product-image.*")
+2026-02-09 16:54:31.489 [main] INFO  com.getgo.pages.BasePage - resourceIdimage-block-product-image-1
+2026-02-09 16:54:31.489 [main] INFO  com.getgo.pages.BasePage - Current product image index: 1 (resource-id: image-block-product-image-1)
+2026-02-09 16:54:31.489 [main] INFO  com.getgo.stepdefinitions.AmazonShoppingSteps - Waiting for index change... Current: 1, Expected to be different from: 0
+2026-02-09 16:54:31.536 [main] INFO  com.getgo.utils.ElementUtil - Element is visible: AppiumBy.androidUIAutomator: new UiSelector().resourceIdMatches(".*image-block-product-image.*")
+2026-02-09 16:54:31.603 [main] INFO  com.getgo.pages.BasePage - resourceIdimage-block-product-image-1
+2026-02-09 16:54:31.604 [main] INFO  com.getgo.pages.BasePage - Current product image index: 1 (resource-id: image-block-product-image-1)
+2026-02-09 16:54:31.604 [main] INFO  com.getgo.stepdefinitions.AmazonShoppingSteps - Image index after swipe: 1
+2026-02-09 16:54:31.605 [main] INFO  com.getgo.stepdefinitions.AmazonShoppingSteps - Verifying next product image is displayed
+2026-02-09 16:54:32.610 [main] INFO  com.getgo.stepdefinitions.AmazonShoppingSteps - Successfully verified image swipe
+2026-02-09 16:54:32.612 [main] INFO  com.getgo.stepdefinitions.AmazonShoppingSteps - Zooming in on product image
+2026-02-09 16:54:32.697 [main] INFO  com.getgo.pages.BasePage - Product image size: 1230x1209
+2026-02-09 16:54:32.698 [main] INFO  com.getgo.pages.BasePage - Product image area: 1487070 pixels
+2026-02-09 16:54:32.698 [main] INFO  com.getgo.stepdefinitions.AmazonShoppingSteps - Image area before zoom in: 1487070
+2026-02-09 16:54:32.779 [main] INFO  com.getgo.utils.ElementUtil - Element is present: AppiumBy.androidUIAutomator: new UiSelector().resourceIdMatches(".*image-block-product-image.*")
+2026-02-09 16:54:33.384 [main] INFO  com.getgo.utils.GestureUtil - Zoomed in on element
+2026-02-09 16:54:33.384 [main] INFO  com.getgo.pages.BasePage - Zoomed in on product image
+2026-02-09 16:54:34.586 [main] INFO  com.getgo.pages.BasePage - Product image size: 1230x1209
+2026-02-09 16:54:34.586 [main] INFO  com.getgo.pages.BasePage - Product image area: 1487070 pixels
+2026-02-09 16:54:34.587 [main] INFO  com.getgo.stepdefinitions.AmazonShoppingSteps - Image area after zoom in: 1487070
+2026-02-09 16:54:34.589 [main] INFO  com.getgo.stepdefinitions.AmazonShoppingSteps - Verifying product image is enlarged
+2026-02-09 16:54:34.596 [main] WARN  com.getgo.stepdefinitions.AmazonShoppingSteps - Image size did not change - zoom gesture may not have worked
+2026-02-09 16:54:34.596 [main] INFO  com.getgo.stepdefinitions.AmazonShoppingSteps - Successfully verified image enlargement
+2026-02-09 16:54:34.597 [main] INFO  com.getgo.stepdefinitions.AmazonShoppingSteps - Zooming out on product image
+2026-02-09 16:54:34.686 [main] INFO  com.getgo.utils.ElementUtil - Element is present: AppiumBy.androidUIAutomator: new UiSelector().resourceIdMatches(".*image-block-product-image.*")
+2026-02-09 16:54:35.260 [main] INFO  com.getgo.utils.GestureUtil - Zoomed out on element
+2026-02-09 16:54:35.261 [main] INFO  com.getgo.pages.BasePage - Zoomed out on product image
+2026-02-09 16:54:36.377 [main] INFO  com.getgo.pages.BasePage - Product image size: 1230x1209
+2026-02-09 16:54:36.377 [main] INFO  com.getgo.pages.BasePage - Product image area: 1487070 pixels
+2026-02-09 16:54:36.378 [main] INFO  com.getgo.stepdefinitions.AmazonShoppingSteps - Image area after zoom out: 1487070
+2026-02-09 16:54:36.378 [main] INFO  com.getgo.stepdefinitions.AmazonShoppingSteps - Verifying product image returned to normal size
+2026-02-09 16:54:36.379 [main] WARN  com.getgo.stepdefinitions.AmazonShoppingSteps - Image size did not change - zoom out gesture may not have worked
+2026-02-09 16:54:36.379 [main] INFO  com.getgo.stepdefinitions.AmazonShoppingSteps - Successfully verified image returned to normal size
+2026-02-09 16:54:36.380 [main] INFO  com.getgo.stepdefinitions.AmazonShoppingSteps - Scrolling until price is visible: 
+2026-02-09 16:54:46.452 [main] INFO  com.getgo.utils.ElementUtil - Element is not present: AppiumBy.androidUIAutomator: new UiSelector().resourceId("corePriceDisplay_mobile_feature_div")
+2026-02-09 16:54:56.666 [main] INFO  com.getgo.utils.ElementUtil - Element is not present: AppiumBy.androidUIAutomator: new UiSelector().textMatches(".*\$.*")
+2026-02-09 16:54:56.668 [main] INFO  com.getgo.pages.BasePage - Price element not found, scrolling up (attempt 1)
+2026-02-09 16:54:57.537 [main] INFO  com.getgo.utils.GestureUtil - Swiped from (672,2393) to (672,598)
+2026-02-09 16:54:58.694 [main] INFO  com.getgo.utils.ElementUtil - Element is present: AppiumBy.androidUIAutomator: new UiSelector().resourceId("corePriceDisplay_mobile_feature_div")
+2026-02-09 16:54:58.694 [main] INFO  com.getgo.pages.BasePage - Price element found by resource-id after 1 scroll(s)
+2026-02-09 16:54:58.810 [main] INFO  com.getgo.utils.GestureUtil - Element found after 0 scrolls
+2026-02-09 16:54:58.815 [main] INFO  com.getgo.stepdefinitions.AmazonShoppingSteps - Verifying product price is visible
+2026-02-09 16:54:58.898 [main] INFO  com.getgo.utils.ElementUtil - Element is present: AppiumBy.androidUIAutomator: new UiSelector().resourceId("corePriceDisplay_mobile_feature_div")
+2026-02-09 16:55:08.966 [main] ERROR com.getgo.pages.BasePage - Failed to get product price
+org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters.
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.13.0', revision: 'ba948ece5b*'
+System info: os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '14.5', java.version: '22.0.2'
+Driver info: io.appium.java_client.android.AndroidDriver
+Command: [aaa5d6ac-f3bc-4c10-8e51-2829c0d6f759, findChildElement {id=00000000-0000-020a-0000-303d000001ae, using=class name, value=android.view.View/android.widget.TextView}]
+Capabilities {appium:androidInstallTimeout: 90000, appium:appActivity: com.amazon.mShop.home.HomeA..., appium:appPackage: com.amazon.mShop.android.sh..., appium:autoGrantPermissions: true, appium:automationName: UiAutomator2, appium:databaseEnabled: false, appium:desired: {androidInstallTimeout: 90000, appActivity: com.amazon.mShop.home.HomeA..., appPackage: com.amazon.mShop.android.sh..., autoGrantPermissions: true, automationName: UiAutomator2, deviceName: Android Emulator, fullReset: false, newCommandTimeout: 300, noReset: true, platformName: ANDROID, platformVersion: 14.0}, appium:deviceApiLevel: 34, appium:deviceManufacturer: Google, appium:deviceModel: sdk_gphone64_arm64, appium:deviceName: emulator-5554, appium:deviceScreenDensity: 480, appium:deviceScreenSize: 1344x2992, appium:deviceUDID: emulator-5554, appium:fullReset: false, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:newCommandTimeout: 300, appium:noReset: true, appium:pixelRatio: 3, appium:platformVersion: 14, appium:statBarHeight: 151, appium:takesScreenshot: true, appium:viewportRect: {height: 2841, left: 0, top: 151, width: 1344}, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}
+Session ID: aaa5d6ac-f3bc-4c10-8e51-2829c0d6f759
+	at jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62) ~[?:?]
+	at java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502) ~[?:?]
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:486) ~[?:?]
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200) ~[selenium-remote-driver-4.13.0.jar:?]
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133) ~[selenium-remote-driver-4.13.0.jar:?]
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52) ~[selenium-remote-driver-4.13.0.jar:?]
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191) ~[selenium-remote-driver-4.13.0.jar:?]
+	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:250) ~[java-client-8.6.0.jar:?]
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:602) ~[selenium-remote-driver-4.13.0.jar:?]
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165) ~[selenium-remote-driver-4.13.0.jar:?]
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59) ~[selenium-remote-driver-4.13.0.jar:?]
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:359) ~[selenium-remote-driver-4.13.0.jar:?]
+	at org.openqa.selenium.remote.RemoteWebElement.findElement(RemoteWebElement.java:212) ~[selenium-remote-driver-4.13.0.jar:?]
+	at com.getgo.pages.AmazonProductDetailsPage.getProductPrice(AmazonProductDetailsPage.java:82) ~[test-classes/:?]
+	at com.getgo.stepdefinitions.AmazonShoppingSteps.iShouldSeeTheProductPrice(AmazonShoppingSteps.java:550) ~[test-classes/:?]
+	at jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[?:?]
+	at java.lang.reflect.Method.invoke(Method.java:580) ~[?:?]
+	at io.cucumber.java.Invoker.doInvoke(Invoker.java:66) ~[cucumber-java-7.14.0.jar:7.14.0]
+	at io.cucumber.java.Invoker.invoke(Invoker.java:24) ~[cucumber-java-7.14.0.jar:7.14.0]
+	at io.cucumber.java.AbstractGlueDefinition.invokeMethod(AbstractGlueDefinition.java:47) ~[cucumber-java-7.14.0.jar:7.14.0]
+	at io.cucumber.java.JavaStepDefinition.execute(JavaStepDefinition.java:29) ~[cucumber-java-7.14.0.jar:7.14.0]
+	at io.cucumber.core.runner.CoreStepDefinition.execute(CoreStepDefinition.java:66) ~[cucumber-core-7.14.0.jar:7.14.0]
+	at io.cucumber.core.runner.PickleStepDefinitionMatch.runStep(PickleStepDefinitionMatch.java:63) ~[cucumber-core-7.14.0.jar:7.14.0]
+	at io.cucumber.core.runner.ExecutionMode$1.execute(ExecutionMode.java:10) ~[cucumber-core-7.14.0.jar:7.14.0]
+	at io.cucumber.core.runner.TestStep.executeStep(TestStep.java:84) ~[cucumber-core-7.14.0.jar:7.14.0]
+	at io.cucumber.core.runner.TestStep.run(TestStep.java:56) ~[cucumber-core-7.14.0.jar:7.14.0]
+	at io.cucumber.core.runner.PickleStepTestStep.run(PickleStepTestStep.java:51) ~[cucumber-core-7.14.0.jar:7.14.0]
+	at io.cucumber.core.runner.TestCase.run(TestCase.java:84) ~[cucumber-core-7.14.0.jar:7.14.0]
+	at io.cucumber.core.runner.Runner.runPickle(Runner.java:75) ~[cucumber-core-7.14.0.jar:7.14.0]
+	at io.cucumber.core.runtime.Runtime.lambda$executePickle$6(Runtime.java:107) ~[cucumber-core-7.14.0.jar:7.14.0]
+	at io.cucumber.core.runtime.CucumberExecutionContext.lambda$runTestCase$5(CucumberExecutionContext.java:137) ~[cucumber-core-7.14.0.jar:7.14.0]
+	at io.cucumber.core.runtime.RethrowingThrowableCollector.executeAndThrow(RethrowingThrowableCollector.java:23) ~[cucumber-core-7.14.0.jar:7.14.0]
+	at io.cucumber.core.runtime.CucumberExecutionContext.runTestCase(CucumberExecutionContext.java:137) ~[cucumber-core-7.14.0.jar:7.14.0]
+	at io.cucumber.core.runtime.Runtime.lambda$executePickle$7(Runtime.java:107) ~[cucumber-core-7.14.0.jar:7.14.0]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572) ~[?:?]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:317) ~[?:?]
+	at io.cucumber.core.runtime.Runtime$SameThreadExecutorService.execute(Runtime.java:235) ~[cucumber-core-7.14.0.jar:7.14.0]
+	at java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:123) ~[?:?]
+	at io.cucumber.core.runtime.Runtime.lambda$runFeatures$3(Runtime.java:89) ~[cucumber-core-7.14.0.jar:7.14.0]
+	at java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:212) ~[?:?]
+	at java.util.stream.SliceOps$1$1.accept(SliceOps.java:200) ~[?:?]
+	at java.util.ArrayList$ArrayListSpliterator.tryAdvance(ArrayList.java:1686) ~[?:?]
+	at java.util.stream.ReferencePipeline.forEachWithCancel(ReferencePipeline.java:144) ~[?:?]
+	at java.util.stream.AbstractPipeline.copyIntoWithCancel(AbstractPipeline.java:574) ~[?:?]
+	at java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:560) ~[?:?]
+	at java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:546) ~[?:?]
+	at java.util.stream.ReduceOps$ReduceOp.evaluateSequential(ReduceOps.java:921) ~[?:?]
+	at java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:265) ~[?:?]
+	at java.util.stream.ReferencePipeline.collect(ReferencePipeline.java:702) ~[?:?]
+	at io.cucumber.core.runtime.Runtime.runFeatures(Runtime.java:90) ~[cucumber-core-7.14.0.jar:7.14.0]
+	at io.cucumber.core.runtime.Runtime.lambda$run$0(Runtime.java:78) ~[cucumber-core-7.14.0.jar:7.14.0]
+	at io.cucumber.core.runtime.CucumberExecutionContext.lambda$runFeatures$6(CucumberExecutionContext.java:148) ~[cucumber-core-7.14.0.jar:7.14.0]
+	at io.cucumber.core.runtime.CucumberExecutionContext.execute(CucumberExecutionContext.java:163) [cucumber-core-7.14.0.jar:7.14.0]
+	at io.cucumber.core.runtime.CucumberExecutionContext.runFeatures(CucumberExecutionContext.java:146) [cucumber-core-7.14.0.jar:7.14.0]
+	at io.cucumber.core.runtime.Runtime.run(Runtime.java:78) [cucumber-core-7.14.0.jar:7.14.0]
+	at io.cucumber.core.cli.Main.run(Main.java:87) [cucumber-core-7.14.0.jar:7.14.0]
+	at io.cucumber.core.cli.Main.main(Main.java:30) [cucumber-core-7.14.0.jar:7.14.0]
+2026-02-09 16:55:08.992 [main] INFO  com.getgo.stepdefinitions.AmazonShoppingSteps - Tearing down test execution
+2026-02-09 16:55:09.359 [main] INFO  com.getgo.utils.ElementUtil - Screenshot saved: screenshots/test_end_1770627309357.png
+2026-02-09 16:55:09.359 [main] INFO  com.getgo.drivermanager.DriverManager - Quitting Appium Driver
+2026-02-09 16:55:09.993 [main] INFO  com.getgo.drivermanager.DriverManager - Appium Driver quit successfully
+2026-02-09 16:55:09.993 [main] INFO  com.getgo.stepdefinitions.AmazonShoppingSteps - Test teardown completed successfully

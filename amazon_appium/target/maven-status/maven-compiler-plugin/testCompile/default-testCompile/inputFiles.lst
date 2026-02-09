@@ -1,0 +1,14 @@
+/Users/nursektijati/Documents/getgo_appium/src/test/java/com/getgo/pages/AmazonProductDetailsPage.java
+/Users/nursektijati/Documents/getgo_appium/src/test/java/com/getgo/utils/WaitUtil.java
+/Users/nursektijati/Documents/getgo_appium/src/test/java/com/getgo/runner/TestRunnerTestNG.java
+/Users/nursektijati/Documents/getgo_appium/src/test/java/com/getgo/pages/AmazonLoginPage.java
+/Users/nursektijati/Documents/getgo_appium/src/test/java/com/getgo/drivermanager/DriverManager.java
+/Users/nursektijati/Documents/getgo_appium/src/test/java/com/getgo/utils/ElementUtil.java
+/Users/nursektijati/Documents/getgo_appium/src/test/java/com/getgo/pages/BasePage.java
+/Users/nursektijati/Documents/getgo_appium/src/test/java/com/getgo/config/CapabilitiesConfig.java
+/Users/nursektijati/Documents/getgo_appium/src/test/java/com/getgo/pages/AmazonHomePage.java
+/Users/nursektijati/Documents/getgo_appium/src/test/java/com/getgo/stepdefinitions/AmazonShoppingSteps.java
+/Users/nursektijati/Documents/getgo_appium/src/test/java/com/getgo/pages/AmazonSearchResultsPage.java
+/Users/nursektijati/Documents/getgo_appium/src/test/java/com/getgo/utils/ImageComparisonUtil.java
+/Users/nursektijati/Documents/getgo_appium/src/test/java/com/getgo/runner/TestRunner.java
+/Users/nursektijati/Documents/getgo_appium/src/test/java/com/getgo/utils/GestureUtil.java
