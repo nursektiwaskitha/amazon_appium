@@ -1,10 +1,8 @@
 # Amazon Shopping App - Appium Cucumber Automation Framework
 
-A comprehensive Cucumber BDD framework for mobile automation testing using Appium and Java. This framework automates various scenarios on the Amazon Shopping Android app with Android 14.0 emulator.
-
 ## 🏗️ Framework Architecture
 
-The framework follows industry-standard design patterns and best practices:
+The framework follows best practices:
 
 - **Page Object Model (POM)** - Separates page elements and actions
 - **Cucumber BDD** - Behavior-driven development with Gherkin syntax
@@ -209,16 +207,6 @@ appium --port 4723
 # Download from: https://github.com/appium/appium-desktop/releases
 ```
 
-### 4. Verify Setup
-
-```bash
-# Check if emulator is running
-adb devices
-
-# Check if app is installed
-adb shell pm list packages | grep amazon
-```
-
 ## 🎯 Running Tests
 
 ### Run All Tests (JUnit)
@@ -252,25 +240,11 @@ mvn clean test -Dcucumber.filter.tags="@Gesture"
 mvn clean test -Dcucumber.filter.tags="@E2E"
 ```
 
-### Run Multiple Tags
-
-```bash
-# Run Smoke OR Search tests
-mvn clean test -Dcucumber.filter.tags="@Smoke or @Search"
-
-# Run Smoke AND Search tests
-mvn clean test -Dcucumber.filter.tags="@Smoke and @Search"
-```
-
 ### Run from IDE
 
 #### IntelliJ IDEA
 1. Right-click on `TestRunner.java`
 2. Select "Run 'TestRunner'"
-
-#### Eclipse
-1. Right-click on `TestRunner.java`
-2. Select "Run As" → "JUnit Test"
 
 ## 📊 Test Reports
 
@@ -341,3 +315,23 @@ Available tags in feature file:
 - `@Gesture` - Gesture tests
 - `@ElementPresence` - Element presence verification
 - `@ElementNotPresence` - Element absence verification
+
+## ☁️ AWS Device Farm Integration
+
+Follow this checklist to get your tests running on AWS Device Farm:
+
+- [ ] **Step 1:** Have an AWS account (sign up at aws.amazon.com)
+- [ ] **Step 2:** Obtain Amazon Shopping app APK file
+- [ ] **Step 3:** Modify `DriverManager.java` to support Device Farm (see code below)
+- [ ] **Step 4:** Update `pom.xml` with assembly plugin configuration
+- [ ] **Step 5:** Create `zip-assembly.xml` in `src/test/resources/`
+- [ ] **Step 6:** Create `testng-devicefarm.xml` configuration
+- [ ] **Step 7:** Build test package: `mvn clean package -DskipTests`
+- [ ] **Step 8:** Verify `target/zip-with-dependencies.zip` is created
+- [ ] **Step 9:** Log in to AWS Device Farm console
+- [ ] **Step 10:** Create a new project
+- [ ] **Step 11:** Upload APK file
+- [ ] **Step 12:** Upload test package (ZIP file)
+- [ ] **Step 13:** Select devices to test on
+- [ ] **Step 14:** Start test run
+- [ ] **Step 15:** Monitor results and view reports
