@@ -322,7 +322,7 @@ Follow this checklist to get your tests running on AWS Device Farm:
 
 - [ ] **Step 1:** Have an AWS account (sign up at aws.amazon.com)
 - [ ] **Step 2:** Obtain Amazon Shopping app APK file
-- [ ] **Step 3:** Modify `DriverManager.java` to support Device Farm (see code below)
+- [ ] **Step 3:** Modify `DriverManager.java` to support Device Farm
 - [ ] **Step 4:** Update `pom.xml` with assembly plugin configuration
 - [ ] **Step 5:** Create `zip-assembly.xml` in `src/test/resources/`
 - [ ] **Step 6:** Create `testng-devicefarm.xml` configuration
